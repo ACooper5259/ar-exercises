@@ -24,3 +24,4 @@ store3.mens_apparel = false
 store3.womens_apparel = true
 store3.save
 
+puts "The number of stores in the database is #{Store.count}."
