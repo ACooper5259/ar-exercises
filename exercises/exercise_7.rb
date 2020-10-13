@@ -9,4 +9,11 @@ require_relative './exercise_6'
 puts "Exercise 7"
 puts "----------"
 
-# Your code goes here ...
+puts "What store are you interested in?"
+user_answer = gets.chomp
+# puts "The number of stores in the database is #{Store.count}."
+
+@store8 = Store.create(name: "#{user_answer}")
+puts @store8.valid?
+puts @store8.errors.messages
+
